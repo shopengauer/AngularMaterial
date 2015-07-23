@@ -5,32 +5,45 @@
     <meta name="author" content="VSPavlov"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Angular Material</title>
-    <link rel="stylesheet" href = "angularjs/bootstrap.css"/>
-    <link rel="stylesheet" href = "angularjs/bootstrap-theme.css"/>
-    <link rel="stylesheet" href = "angularjs/style.css"/>
+    <link rel="stylesheet" href = "../static/angularjs/bootstrap.css"/>
+    <link rel="stylesheet" href = "../static/angularjs/bootstrap-theme.css"/>
+    <link rel="stylesheet" href = "../static/angularjs/style.css"/>
 
-    <link rel="stylesheet" href = "angularjs/angular-material.css"/>
-    <link rel="stylesheet" href = "angularjs/style.css"/>
+    <link rel="stylesheet" href = "../static/angularjs/angular-material.css"/>
+    <link rel="stylesheet" href = "../static/angularjs/style.css"/>
 
-    <script src = "angularjs/angular.js"></script>
-    <script src = "angularjs/angular-material.js"></script>
-    <script src = "angularjs/ngmodules/angular-animate.js"></script>
-    <script src = "angularjs/ngmodules/angular-aria.js"></script>
-    <script src = "angularjs/controllers/angMatApp.js"></script>
+    <script src = "../static/angularjs/angular.js"></script>
+    <script src = "../static/angularjs/angular-material.js"></script>
+    <script src = "../static/angularjs/ngmodules/angular-animate.js"></script>
+    <script src = "../static/angularjs/ngmodules/angular-aria.js"></script>
+    <script src = "../static/angularjs/controllers/angMatApp.js"></script>
 
 
 </head>
 <body ng-controller="angMatCtrl">
-<div>
-    <md-button ng-bind="home">Hello</md-button>
-    <button class="btn btn-primary">Hello</button>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+        <form class="well">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Имя пользователя:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Имя"/>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Пароль:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль"/>
+            </div>
+
+            <!--<button type="submit" class="btn btn-primary">Подтвердить</button>-->
+            <md-button type ="submit" class="md-raised">OK</md-button>
+        </form>
+        </div>
+    </div>
 </div>
 
 
-<div ng-show="true">
-<ng-include src="'/home'"></ng-include>
-    Home
-</div>
 
 
 </body>

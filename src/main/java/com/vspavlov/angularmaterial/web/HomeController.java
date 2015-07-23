@@ -18,8 +18,8 @@ public class HomeController {
         return "table";
     }
 
-//    @RequestMapping(value = "/",method = RequestMethod.GET)
-//    public String hom(){
-//        return "home";
-//    }
+    @RequestMapping(value = "/",method = RequestMethod.GET)
+    public String hom(){
+        return "home";
+    }
 }
